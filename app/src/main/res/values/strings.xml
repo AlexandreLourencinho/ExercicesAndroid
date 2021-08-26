@@ -44,7 +44,7 @@ Pour plus d\'informations, consultez la Beatles Time Capsule sur www.rockument.c
     <string name="messageFroyo">Vous avez commandé un Froyo</string>
     <string name="titrePff">Bon, voilà</string>
     <string name="messagePff">t\'as appuyé sur un bouton t\'es content? Connard va</string>
-    <!--            <string name=""></string>-->
+                <string name="ExLv">Exemples listView - Comptes utilisateurs</string>
     <!--        <string name=""></string>-->
     <!--        <string name=""></string>-->
     <!--        <string name=""></string>-->

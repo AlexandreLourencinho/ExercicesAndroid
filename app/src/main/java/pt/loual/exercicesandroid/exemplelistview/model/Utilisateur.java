@@ -1,5 +1,7 @@
 package pt.loual.exercicesandroid.exemplelistview.model;
 
+import androidx.annotation.NonNull;
+
 public class Utilisateur
 {
     private String nom;
@@ -17,4 +19,25 @@ public class Utilisateur
         this.activite = activite;
     }
 
+    @NonNull
+    @Override
+    public String toString()
+    {
+        return this.nom + "(" + this.typeUtilisateur + ")";
+    }
+
+    public String getNom()
+    {
+        return nom;
+    }
+
+    public String getTypeUtilisateur()
+    {
+        return typeUtilisateur;
+    }
+
+    public Boolean getActivite()
+    {
+        return activite;
+    }
 }
