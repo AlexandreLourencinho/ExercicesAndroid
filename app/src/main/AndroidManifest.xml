@@ -10,7 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExercicesAndroid">
         <activity
+            android:name=".MainActivity2"
+            android:parentActivityName=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".numerologie.gui.Numerology"
+            android:parentActivityName=".MainActivity"
+            android:exported="true" />
+        <activity
             android:name=".exemplelistview.gui.ExempleListView"
+            android:parentActivityName=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".exempleimg.ExempleImg"

@@ -44,11 +44,11 @@ Pour plus d\'informations, consultez la Beatles Time Capsule sur www.rockument.c
     <string name="messageFroyo">Vous avez commandé un Froyo</string>
     <string name="titrePff">Bon, voilà</string>
     <string name="messagePff">t\'as appuyé sur un bouton t\'es content? Connard va</string>
-                <string name="ExLv">Exemples listView - Comptes utilisateurs</string>
-    <!--        <string name=""></string>-->
-    <!--        <string name=""></string>-->
-    <!--        <string name=""></string>-->
-    <!--        <string name=""></string>-->
+    <string name="ExLv">Exemples listView - Comptes utilisateurs</string>
+            <string name="prenom1">Prénom 1</string>
+            <string name="prenom2">Prénom 2</string>
+            <string name="page2">Page 2 des exercices / exemple sur Android</string>
+            <string name="numerology">Exercice de numérologie (secte)</string>
     <!--        <string name=""></string>-->
     <!--        <string name=""></string>-->
     <!--        <string name=""></string>-->

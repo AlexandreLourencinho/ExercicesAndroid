@@ -67,10 +67,11 @@
         app:layout_constraintVertical_bias="0.242" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/boutonPage2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
+        android:minHeight="48dp"
         android:rotation="180"
         app:backgroundTint="@color/green_400"
         app:layout_constraintBottom_toBottomOf="parent"

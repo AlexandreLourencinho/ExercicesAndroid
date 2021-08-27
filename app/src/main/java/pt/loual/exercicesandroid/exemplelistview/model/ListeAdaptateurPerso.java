@@ -1,6 +1,5 @@
 package pt.loual.exercicesandroid.exemplelistview.model;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,8 +7,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import java.util.ArrayList;
 import java.util.List;
 
 import pt.loual.exercicesandroid.R;
@@ -66,6 +63,7 @@ public class ListeAdaptateurPerso extends BaseAdapter
         holder.roleVue.setText("Role : " + user.getTypeUtilisateur());
 
         int imageId = this.getImageParNom(user.getTypeUtilisateur());
+        System.out.println(imageId);
 
         holder.imageRole.setImageResource(imageId);
         return view;
@@ -76,12 +74,38 @@ public class ListeAdaptateurPerso extends BaseAdapter
         ImageView imageRole;
         TextView nomUtilVue;
         TextView roleVue;
+
     }
 
     public int getImageParNom(String nom)
     {
         String nomPackage = contexte.getPackageName();
+//        System.out.println(nomPackage);
+        int resId;
+//        Log.i("unliste", "Res Name: "+ nom+"==> Res ID = "+ contexte.getResources().getIdentifier(nom, "mipmap", nomPackage));
+        switch(nom){
+            case "admin" :
+                resId = 1500002;
+                break;
+            case "guest" :
+                resId = 1500003;
+                        break;
+            case "utilisateur" :
+                resId = 1500001;
+                break;
+            default:
+                resId = 0;
+        }
         return contexte.getResources().getIdentifier(nom, "mipmap", nomPackage);
+//        System.out.println(resId);
+//        return resId;
     }
+/*
+2131492866
+
+    I/System.out: 2131492866
+        2131492869
+        2131492867
+ */
 
 }

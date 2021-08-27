@@ -44,15 +44,13 @@ public class ExempleListView extends AppCompatActivity
 
         Utilisateur[] listeUtilisateur = new Utilisateur[]{francois,germain,cedric,behzad,sana,hocine,noe,fabien,juliette,anais,alexandre,jeanmichel};
 
-        ArrayAdapter<Utilisateur> listeAdapt = new ArrayAdapter<Utilisateur>(this, android.R.layout.simple_list_item_1,listeUtilisateur);
+//        ArrayAdapter<Utilisateur> listeAdapt = new ArrayAdapter<Utilisateur>(this, android.R.layout.simple_list_item_1,listeUtilisateur);
 
         listeNorm = new ArrayList<Utilisateur>();
-        for(Utilisateur u : listeUtilisateur){
-            listeNorm.add(u);
-        }
+        listeNorm.addAll(Arrays.asList(listeUtilisateur));
 //        liste.setAdapter(listeAdapt);
 
-        liste.setAdapter(new ListeAdaptateurPerso(listeNorm,ExempleListView.this));
+        liste.setAdapter(new ListeAdaptateurPerso(listeNorm,this));
 
 
     }
